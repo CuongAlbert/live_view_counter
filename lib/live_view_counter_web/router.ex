@@ -19,6 +19,7 @@ defmodule LiveViewCounterWeb.Router do
     pipe_through :browser
 
     live "/", CounterLive, :counter
+    live"/game", GameLive, :answer
   end
 
   # Other scopes may use custom stacks.
